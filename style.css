@@ -1,0 +1,42 @@
+p{
+color: rgb(3, 13, 122);
+
+}
+header{
+    background-color: rgb(219, 219, 225);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+nav{
+
+    background-color: aquamarine;
+        color: rgb(255, 255, 255);
+            display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+form h2{
+    color: rgb(rgb(177, 13, 13), green, blue);
+}
+ 
+
+.but{
+    border: 4px dashed coral;
+padding: 10px;
+}
+button{
+    margin-left: 20px;
+}
+
+textarea{
+width: 200px;
+height: 150px;
+}
+
+img{
+    width: 300px;
+    width: 300xp;
+}
