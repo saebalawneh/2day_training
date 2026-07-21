@@ -4,176 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="My Frontend Journey">
-    <meta property="og:description" content="Frontend Internship Project">
-    <meta property="og:image" content="imgs/ph1.jpeg">
+    <meta property="og:title" content="BinX Tech Frontend Internship">
+    <meta property="og:description" content="A structured project-driven internship.">
+    <meta property="og:image" content="images/logo.png">
 
-    <title>My Frontend Trip</title>
-
-    <link rel="stylesheet" href="saeb.css">
+    <title>MY_FRONTEND_TRIP</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main>
+        <fieldset>
+            <header>
+                <p>login</p>
+                <p>Navigation</p>
+                <p>search</p>
+            </header>
+        </fieldset>
 
-<header class="header">
+        <!-- Day 3 - Flexbox Navbar: logo on one side, links on the other, spaced with gap -->
+        <fieldset>
+            <nav class="navbar">
+                <span class="logo">SAEB.dev</span>
+                <div class="nav-links">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                </div>
+            </nav>
+        </fieldset>
 
-    <div class="logo">
-        <h2>Saeb</h2>
-    </div>
+        <fieldset>
+            <legend><h1>HELLO , I'M SAEB ALAWNEH</h1></legend>
+            <p>CSE STUDENT , INTRESTED IN FRONTEND</p>
+            <img src="imgs/ph1.jpeg" alt="saeb_img">
+        </fieldset>
 
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+        <p>hello , im saeb alawneh, i returned to the course after a long break</p>
+        <br>
 
-    <div class="icons">
-        <button aria-label="Search">🔍</button>
-        <button aria-label="Profile">👤</button>
-        <button aria-label="Favorites">❤</button>
-        <button aria-label="Cart">🛒</button>
-    </div>
+        <section>
+            <h2>Our Team</h2>
 
-</header>
+            <!-- Day 3 - Flexbox Cards: row of three equal-width cards -->
+            <div class="card-row">
+                <div class="card">
+                    <h3>Saeb Alawneh</h3>
+                    <p>Frontend Developer</p>
+                </div>
+                <div class="card">
+                    <h3>Team Member 2</h3>
+                    <p>Backend Developer</p>
+                </div>
+                <div class="card">
+                    <h3>Team Member 3</h3>
+                    <p>UI / UX Designer</p>
+                </div>
+            </div>
+        </section>
+        <br>
 
-<main>
+        <article>
+            <h2>the good news is i returned to learn the html and css , i wish the all good luck</h2>
+        </article>
 
-<section class="hero">
+        <form action="">
+            <h2>enter your informations</h2>
 
-    <h1>Hello, I'm Saeb Alawneh</h1>
+            <label for="name">name</label>
+            <input type="text" name="name" id="name" required placeholder="user name" autofocus>
+            <br><br>
 
-    <p>Computer Engineering Student | Frontend Developer</p>
+            <label for="age">age</label>
+            <input type="range" name="age" id="age" required min="18" max="63" step="1">
+            <br><br>
 
-    <img src="imgs/ph1.jpeg" alt="Saeb Alawneh">
+            <label for="phone">number phone</label>
+            <input type="tel" name="phone" id="phone" required minlength="10" maxlength="10" value="05">
+            <br><br>
 
-</section>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" placeholder="yourname@gmail.com">
+            <br><br>
 
-<section class="cards">
+            <fieldset>
+                <legend>univarsity name :</legend>
 
-    <div class="card">
-        <h2>About Me</h2>
+                <label for="uni1">AAUP</label>
+                <input type="radio" name="univ" value="AAUP" id="uni1" checked>
+                <br><br>
 
-        <p>
-            I am a Computer Engineering student who loves learning Frontend Development and improving my programming skills.
-        </p>
-    </div>
+                <label for="uni2">PTUK</label>
+                <input type="radio" name="univ" value="PTUK" id="uni2">
+                <br><br>
 
-    <div class="card">
-        <h2>My Goal</h2>
+                <label for="uni3">PPU</label>
+                <input type="radio" name="univ" value="PPU" id="uni3">
+                <br><br>
 
-        <p>
-            Become a professional Frontend Developer and build modern responsive websites.
-        </p>
-    </div>
+                <label for="uni4">NNU</label>
+                <input type="radio" name="univ" value="NNU" id="uni4">
+                <br><br>
 
-    <div class="card">
-        <h2>News</h2>
+                <label for="uni5">AQU</label>
+                <input type="radio" name="univ" value="AQU" id="uni5">
+                <br><br>
 
-        <p>
-            I returned to continue my Frontend course after a long break.
-        </p>
-    </div>
+                <label for="uni6">ELSE</label>
+                <input type="radio" name="univ" value="ELSE" id="uni6">
+                <br><br>
 
-</section>
+                <label for="img">your_img(with smile)</label>
+                <input type="file" name="img" id="img">
+                <br><br>
 
-<article>
+                <label for="skills">skills</label>
+                <br>
+                <select name="skills" id="skills" multiple>
+                    <optgroup label="web devolpment">
+                        <option value="frontend" selected>frontend</option>
+                        <option value="backend">backend</option>
+                    </optgroup>
+                    <optgroup label="Ai">
+                        <option value="LM">LM</option>
+                    </optgroup>
+                </select>
+                <br><br>
 
-    <h2>My Story</h2>
+                <textarea name="description" placeholder="write some of words about me" id="description"></textarea>
+            </fieldset>
+            <br><br>
 
-    <p>
-        The good news is that I returned to learning HTML and CSS again.
-        I wish everyone good luck.
-    </p>
+            <fieldset class="but">
+                <button type="submit">submit</button>
+                <button aria-label="Delete">🗑️</button>
+            </fieldset>
+        </form>
 
-</article>
+        <aside>
+            <p>last news</p>
+            <p>Ad</p>
+        </aside>
 
-<aside>
-
-    <h3>Latest News</h3>
-
-    <p>BinX Frontend Internship.</p>
-
-    <p>Practice Every Day.</p>
-
-</aside>
-
-<form>
-
-    <h2>Contact Form</h2>
-
-    <label for="name">Name</label>
-    <input id="name" type="text" required>
-
-    <label for="email">Email</label>
-    <input id="email" type="email" required>
-
-    <label for="phone">Phone</label>
-    <input id="phone" type="tel" required>
-
-    <label for="age">Age</label>
-    <input id="age" type="range" min="18" max="60">
-
-    <fieldset>
-
-        <legend>University</legend>
-
-        <label>
-            <input type="radio" name="university" checked>
-            AAUP
-        </label>
-
-        <label>
-            <input type="radio" name="university">
-            PTUK
-        </label>
-
-        <label>
-            <input type="radio" name="university">
-            PPU
-        </label>
-
-        <label>
-            <input type="radio" name="university">
-            NNU
-        </label>
-
-    </fieldset>
-
-    <label for="skills">Skills</label>
-
-    <select id="skills">
-        <option>Frontend</option>
-        <option>Backend</option>
-        <option>AI</option>
-    </select>
-
-    <label for="about">About You</label>
-
-    <textarea id="about"></textarea>
-
-    <div class="buttons">
-
-        <button type="submit">Submit</button>
-
-        <button type="reset">Reset</button>
-
-        <button aria-label="Delete">🗑️</button>
-
-    </div>
-
-</form>
-
-<footer>
-
-    <p>© 2026 Saeb Alawneh</p>
-
-    <button aria-label="Close Dialog">&times;</button>
-
-</footer>
-
-</main>
-
+        <a href="https://www.linkedin.com/in/saeb-alawneh-9638b631a/">&amp;saeb_alawneh_linkedIn</a>
+        <footer>good luck baby</footer>
+        <p><b>to exit :</b></p>
+        <button aria-label="Close dialog">&times;</button>
+    </main>
 </body>
 </html>
